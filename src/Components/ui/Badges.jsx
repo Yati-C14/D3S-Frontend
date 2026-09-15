@@ -1,0 +1,12 @@
+function Badge({ status }) {
+  const s = STATUS_STYLE[status];
+  return (
+    <span style={{
+      display: "inline-flex", alignItems: "center", gap: 6,
+      fontSize: 12, color: s.color, fontFamily: "ui-monospace, monospace",
+    }}>
+      <span style={{ width: 6, height: 6, borderRadius: "50%", background: s.color, display: "inline-block" }} />
+      {s.label}
+    </span>
+  );
+}

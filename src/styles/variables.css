@@ -1,0 +1,26 @@
+:root {
+  --bg-primary: #0b0d10;
+  --bg-secondary: #11151a;
+  --bg-card: #151a21;
+  --bg-hover: #1c222b;
+
+  --border-color: #272d36;
+
+  --text-primary: #f5f7fa;
+  --text-secondary: #8b949e;
+  --text-muted: #606873;
+
+  --accent: #6c8cff;
+  --accent-hover: #829dff;
+
+  --success: #42c98a;
+  --warning: #e5b95c;
+  --danger: #e06464;
+
+  --sidebar-width: 240px;
+  --topbar-height: 64px;
+
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+}
