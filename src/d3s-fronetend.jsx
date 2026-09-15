@@ -36,7 +36,7 @@ const STATUS_STYLE = {
   failed: { color: "#E0654F", label: "Failed" },
 };
 
-function Badge({ status }) {
+function Badge({ status }) { //added
   const s = STATUS_STYLE[status];
   return (
     <span style={{
@@ -49,7 +49,7 @@ function Badge({ status }) {
   );
 }
 
-function Panel({ children, style }) {
+function Panel({ children, style }) { //added
   return (
     <div style={{
       background: "#151B23", border: "1px solid #2A323D", borderRadius: 6,
