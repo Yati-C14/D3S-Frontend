@@ -5,7 +5,7 @@ import { Badge } from "../components/ui/Badges";
 import { Panel} from "../components/ui/Panel";
 import { PROJECTS } from "../data/mockData";
 
-
+//used useNavigate instead of go here
 function Dashboard() {
   const navigate = useNavigate();
   const stats = [

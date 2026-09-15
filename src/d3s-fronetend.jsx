@@ -59,6 +59,7 @@ function Panel({ children, style }) { //added
 }
 
 /* ---------------- Dashboard ---------------- */
+//used useNavigate instead of go here
 function Dashboard({ go }) {
   const stats = [
     { label: "Projects", value: "24" },
