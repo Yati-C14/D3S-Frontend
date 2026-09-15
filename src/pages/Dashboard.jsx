@@ -33,7 +33,7 @@ function Dashboard() {
       <h2 style={{ fontSize: 14, color: "#8B94A3", fontWeight: 500, marginBottom: 12 }}>Recent projects</h2>
       <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
         {PROJECTS.slice(0, 4).map(p => (
-          <div key={p.id} onClick={() => navigate("/processing")} style={{
+          <div key={p.id} onClick={() => navigate(`/processing/${p.id}`)} style={{
             display: "flex", alignItems: "center", justifyContent: "space-between",
             padding: "14px 16px", background: "#151B23", border: "1px solid #2A323D",
             borderRadius: 6, cursor: "pointer",
