@@ -1,4 +1,11 @@
+import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import { ArrowLeft } from "lucide-react";
+import { Panel } from "../components/ui/Panel";
+import { btnSecondary, chip, chipActive } from "../styles/shared";
+
 function Reconstruction() {
+  const navigate = useNavigate();
   const [conf, setConf] = useState(65);
   const [showTraj, setShowTraj] = useState(true);
   const [frame, setFrame] = useState(40);
@@ -23,7 +30,12 @@ function Reconstruction() {
   return (
     <div>
       <div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", marginBottom: 16 }}>
-        <h1 style={{ fontSize: 22, fontWeight: 600, margin: 0 }}>rooftop_survey_west</h1>
+        <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
+          <button onClick={() => navigate(-1)} style={{ ...btnSecondary, padding: "6px 8px" }}>
+            <ArrowLeft size={14} />
+          </button>
+          <h1 style={{ fontSize: 22, fontWeight: 600, margin: 0 }}>rooftop_survey_west</h1>
+        </div>
         <span style={{ fontSize: 12, color: "#4FAE7C", fontFamily: "ui-monospace, monospace" }}>● reconstruction complete</span>
       </div>
 
@@ -65,3 +77,5 @@ function Reconstruction() {
     </div>
   );
 }
+
+export default Reconstruction;
