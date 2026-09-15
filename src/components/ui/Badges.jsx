@@ -1,4 +1,7 @@
-function Badge({ status }) {
+import React from "react";
+import { STATUS_STYLE } from "../../data/mockData";
+
+export function Badge({ status }) {
   const s = STATUS_STYLE[status];
   return (
     <span style={{

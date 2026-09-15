@@ -1,11 +1,11 @@
 import { Routes, Route } from "react-router-dom";
 
 import AppLayout from "./components/layout/AppLayout.jsx";
-import Dashboard from "./Pages/Dashboard.jsx";
-import Projects from "./Pages/Projects.jsx";
-import Processing from "./Pages/Processing.jsx";
-import Reconstruction from "./Pages/Reconstructions.jsx";
-import Results from "./Pages/Results.jsx";
+import Dashboard from "./pages/Dashboard.jsx";
+import Projects from "./pages/Projects.jsx";
+import Processing from "./pages/Processing.jsx";
+import Reconstruction from "./pages/Reconstructions.jsx";
+import Results from "./pages/Results.jsx";
 
 
 function App() {

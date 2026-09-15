@@ -1,7 +1,10 @@
 import React from "react";
 import { Boxes } from "lucide-react";
 import {useNavigate} from "react-router-dom";
-import { Panel, Badges } from "../components/ui";
+import { Badge } from "../components/ui/Badges";
+import { Panel} from "../components/ui/Panel";
+import { PROJECTS } from "../data/mockData";
+
 
 function Dashboard() {
   const navigate = useNavigate();
