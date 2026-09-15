@@ -1,4 +1,13 @@
-function Badge({ status }) {
+import React from "react";
+
+const STATUS_STYLE = {
+  done: { color: "#4FAE7C", label: "Done" },
+  reconstructing: { color: "#E8A33D", label: "Reconstructing" },
+  queued: { color: "#8B94A3", label: "Queued" },
+  failed: { color: "#E0654F", label: "Failed" },
+};
+
+export function Badge({ status }) {
   const s = STATUS_STYLE[status];
   return (
     <span style={{
