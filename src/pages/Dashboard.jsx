@@ -1,11 +1,11 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import { Boxes } from "lucide-react";
-import {useNavigate} from "react-router-dom";
+import { Panel } from "../components/ui/Panel";
 import { Badge } from "../components/ui/Badges";
-import { Panel} from "../components/ui/Panel";
 import { PROJECTS } from "../data/mockData";
+import { btnPrimary } from "../styles/shared";
 
-//used useNavigate instead of go here
 function Dashboard() {
   const navigate = useNavigate();
   const stats = [
@@ -56,3 +56,5 @@ function Dashboard() {
     </div>
   );
 }
+
+export default Dashboard;
