@@ -5,6 +5,7 @@ import { Panel } from "../components/ui/Panel";
 import { Badge } from "../components/ui/Badges";
 import { PROJECTS } from "../data/mockData";
 import { btnPrimary } from "../styles/shared";
+//used useNavigate instead of go here
 
 function Dashboard() {
   const navigate = useNavigate();
