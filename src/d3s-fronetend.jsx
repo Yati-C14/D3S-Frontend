@@ -375,6 +375,7 @@ const chip = {
   padding: "6px 12px", fontSize: 12, cursor: "pointer",
 };
 const chipActive = { background: "#1C232D", color: "#E8A33D", borderColor: "#5B4526" };
+//added to shared.js in styles
 
 const NAV = [
   { id: "dashboard", label: "Dashboard", icon: LayoutGrid },
