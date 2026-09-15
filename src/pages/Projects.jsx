@@ -28,7 +28,7 @@ function Projects() {
 
       <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: 8 }}>
         {filtered.map(p => (
-          <div key={p.id} onClick={() => navigate(`/reconstruction/${p.id}`)} style={{
+          <div key={p.id} onClick={() => navigate(`/reconstruction/${p.Sid}`)} style={{
             display: "flex", alignItems: "center", justifyContent: "space-between",
             padding: "16px", background: "#151B23", border: "1px solid #2A323D",
             borderRadius: 6, cursor: "pointer",

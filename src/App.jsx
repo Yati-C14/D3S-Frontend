@@ -4,7 +4,7 @@ import AppLayout from "./components/layout/AppLayout.jsx";
 import Dashboard from "./pages/Dashboard.jsx";
 import Projects from "./pages/Projects.jsx";
 import Processing from "./pages/Processing.jsx";
-import Reconstruction from "./pages/Reconstructions.jsx";
+import Reconstruction from "./pages/Reconstruction.jsx";
 import Results from "./pages/Results.jsx";
 
 
