@@ -3,6 +3,7 @@ import { Boxes } from "lucide-react";
 import {useNavigate} from "react-router-dom";
 import { Badge } from "../components/ui/Badges";
 import { Panel} from "../components/ui/Panel";
+import { PROJECTS } from "../data/mockData";
 
 
 function Dashboard() {
