@@ -36,7 +36,7 @@ const STATUS_STYLE = {
   failed: { color: "#E0654F", label: "Failed" },
 };
 
-function Badge({ status }) {
+function Badge({ status }) { //added
   const s = STATUS_STYLE[status];
   return (
     <span style={{
@@ -49,7 +49,7 @@ function Badge({ status }) {
   );
 }
 
-function Panel({ children, style }) {
+function Panel({ children, style }) { //added
   return (
     <div style={{
       background: "#151B23", border: "1px solid #2A323D", borderRadius: 6,
@@ -59,6 +59,7 @@ function Panel({ children, style }) {
 }
 
 /* ---------------- Dashboard ---------------- */
+//used useNavigate instead of go here
 function Dashboard({ go }) {
   const stats = [
     { label: "Projects", value: "24" },
@@ -374,6 +375,7 @@ const chip = {
   padding: "6px 12px", fontSize: 12, cursor: "pointer",
 };
 const chipActive = { background: "#1C232D", color: "#E8A33D", borderColor: "#5B4526" };
+//added to shared.js in styles
 
 const NAV = [
   { id: "dashboard", label: "Dashboard", icon: LayoutGrid },
